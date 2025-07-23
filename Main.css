@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(0, 0, 20);
+    color: #00ffff;
+    font-family: arial;
+}
+
+
+#maint {
+    text-align: center;
+    font-family: arial;
+    font-size: 100px;
+    background: linear-gradient(135deg, #00ffff, #ae00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 400px;
+    padding-top: 250px;
+    text-shadow: 0 0 1px #00ffff, 0 0 5px #00b7ff;
+    
+}
+#qac {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 35%;
+    width: 15%;
+    z-index: 1000; /* ensures it stays above other elements */
+    opacity: 0;
+    pointer-events: none; /* Prevents interaction when hidden */
+    transition: opacity 0.5s;
+    border: solid #00ffff 5px;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);      /* semi-transparent background */
+    backdrop-filter: blur(8px) brightness(0.8); /* blur and dim what's behind */
+    -webkit-backdrop-filter: blur(8px) brightness(0.8); /* for Safari */
+    text-align: left;
+}
+#qac.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+.qaca {
+    font-size: 20px;
+    color: #00ffff;
+    padding-left: 20px;
+}
+.qaca:visited{
+    color: #00ffff; /* Change to your desired color */
+}
+#qact {
+    font-size: 30px;
+    padding-left: 20px;
+    background: linear-gradient(135deg, #00ffff, #ae00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-move 3s ease-in-out infinite alternate;
+
+}
+.mtl {
+    text-align: center;
+    background: linear-gradient(135deg, #00ffff, #ae00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-move 3s ease-in-out infinite alternate;
+    font-size: 50px;
+}
+.mpc {
+    text-align: center;
+    background: linear-gradient(135deg, #00ffff, #ae00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-move 3s ease-in-out infinite alternate;
+    font-size: 25px;
+    padding-bottom: 100px;
+}
+#lang {
+    margin-left: 20px;
+    background-color: rgb(0, 0, 20);
+    color: #00ffff;
+    font-family: arial;
+    font-size: 20px;
+    margin-top: 3px;
+    border: solid 3px #00ffff;
+}
+@media screen and (max-width: 600px) {
+  #maint {
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  .mtl {
+    font-size: 30px;
+  }
+
+  .mpc {
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
+
+  #lang {
+    font-size: 16px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #qac {
+    width: 80%;
+    height: auto;
+    top: 10%;
+    left: 10%;
+    padding: 10px;
+  }
+
+  .qaca {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  #qact {
+    font-size: 22px;
+    padding-left: 10px;
+  }
+
+  body {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+}
